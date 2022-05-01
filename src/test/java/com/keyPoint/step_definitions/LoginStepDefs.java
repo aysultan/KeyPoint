@@ -46,12 +46,12 @@ public class LoginStepDefs {
 
     }
     @Then("user should see {string} message")
-    public void user_should_see_message(String string) {
+    public void user_should_see_message(String message) {
 
 
       String actualMessage=loginPage.errorMessage.getText();
 
-        Assert.assertEquals(string,actualMessage);
+        Assert.assertEquals(message,actualMessage);
     }
 
 }
